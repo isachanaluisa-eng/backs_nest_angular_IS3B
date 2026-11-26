@@ -7,9 +7,10 @@ import { DatabaseModule } from './database/database.module.js';
 import { ConfigService } from './config/config.service.js';
 import { ConfigModule } from './config/config.module.js';
 import { CategoriaModule } from './modules/categoria/categoria.module';
+import { PersonaModule } from './modules/persona/persona.module';
 
 @Module({
-  imports: [AuthModule, UsersModule, DatabaseModule, ConfigModule, CategoriaModule],
+  imports: [AuthModule, UsersModule, DatabaseModule, ConfigModule, CategoriaModule, PersonaModule],
   controllers: [AppController],
   providers: [AppService, ConfigService],
 })
